@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Object</h2>
+    <h4>Using for loop to print Object in output. </h4>
+    <p id="use me"></p>
+    <script>
+        const obj = {
+            name: "Semso",
+            age: 23,
+            city: "New York"
+        };
+        const myArray = Object.values(obj);
+
+        document.getElementById('use me').innerHTML = myArray;
+    </script>
+</body>
+</html>
