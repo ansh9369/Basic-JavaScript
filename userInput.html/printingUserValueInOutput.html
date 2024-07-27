@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Printing user input in output screen</h2>
+    <p>By using <b> "parseFloat" </b> we are getting user input in console</p>
+    <p id="demo"></p>
+    <script>
+        let a = parseFloat(prompt("Enter the first number: "));
+        let b = parseFloat(prompt("Enter the second number: "));
+        var sum = a + b;
+        console.log(sum);
+        document.getElementById('demo').innerHTML = sum;
+        window.alert(sum);
+    </script>
+</body>
+</html>

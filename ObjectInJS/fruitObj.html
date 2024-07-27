@@ -12,8 +12,13 @@
     <p id="demo"></p>
     <script>
         const fruits = {
-            banana: ""
+            banana: 300, apple: 200, cheery: 210
+        };
+        let text = "";
+        for (let [fruit, amount ] of Object.entries(fruits)){
+            text += fruit + ": " + amount + "<br>";
         }
+        document.getElementById('demo').innerHTML = text;
     </script>
 </body>
 </html>

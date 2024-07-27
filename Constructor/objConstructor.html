@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavvaScript Object constructor</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+
+        function Person(first,last,age,eye){
+            this.firstName = first;
+            this.lastName  = last;
+            this.age = age;
+            this.eyeColour = eye;
+        }
+        const myFather = new Person ("Mr" , "Harindra", 52 , "brown");
+        const myMother   = new Person("Pushpa","Devi", 49,"brown");
+        const myBrother = new Person("Ayush", "Rathore", 23, "black");
+        const mySelf   = new Person("Ansh","Rathore", 21,"brown");
+        // document.getElementById('demo').innerHTML = "My father is " + myFather.firstName +" "+ myFather.lastName + " and their age is " + myFather.age + ".";
+        document.getElementById('demo').innerHTML = Object.values(myFather);
+        document.getElementById('demo1').innerHTML = Object.values(myMother);
+        document.getElementById('demo2').innerHTML = Object.values(myBrother);
+        document.getElementById('demo3').innerHTML = Object.values(mySelf);
+    </script>
+</body>
+</html>
