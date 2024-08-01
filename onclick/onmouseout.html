@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onmouseout Event Example</title>
+    <style>
+        #hoverDiv {
+
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            border: 2px solid #000;
+            align-items: center;
+
+            /* width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            border: 1px solid #000; */
+        }
+    </style>
+</head>
+<body>
+    <div id="hoverDiv" onmouseout="mouseOutFunction()">Hover over me!</div>
+
+    <script>
+        function mouseOutFunction() {
+            document.getElementById("hoverDiv").style.backgroundColor = "blue";
+            document.getElementById("hoverDiv").innerHTML = "Mouse left!";
+        }
+    </script>
+    <div id="hoverDiv" onmouseover="mouseOverFunction()">Hover over me!</div>
+
+    <script>
+        function mouseOverFunction() {
+            document.getElementById("hoverDiv").style.backgroundColor = "blue";
+            document.getElementById("hoverDiv").innerHTML = "Mouse left!";
+        }
+    </script>
+</body>
+</html>
