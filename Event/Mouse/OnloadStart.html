@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnLoadStart</title>
+</head>
+
+<body>
+    <h1>OnloaadStart in javascript</h1>
+    <p id="Demo"></p>
+    <video controls onloadstart="myFunction()">
+        <source src="video1.mp4" type="video/mp4">
+        <source src="video1.ogg" type="video/ogg">
+        My Browser doew not support video playback.
+    </video>
+    <p id="demo">Event has hosted!!</p>
+    <p>Video courtesy of <a href="http://127.0.0.1:5501/Event/OnloadStart.html" target="_blank">KGF Chapter 2 </a>.</p>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("Demo").innerHTML += "Loading has Started";
+    }
+</script>
+
+</html>

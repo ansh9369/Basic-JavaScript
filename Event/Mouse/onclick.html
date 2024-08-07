@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+
+<body>
+    <h1>Using onclick event in JS</h1>
+    <p>The onclick event triggers a function when an element is clicked on.</p>
+    <p>Click to trigger a function that will output "Hello World":</p>
+    <p id="demo"></p>
+    <button onclick="myFunction()">Click me</button>
+
+</body>
+<script>
+    function myFunction(){
+        document.getElementById("demo").innerHTML = "Hello World!!";
+    }
+</script>
+
+</html>

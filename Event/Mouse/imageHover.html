@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnMouseOver</title>
+</head>
+
+<body>
+    <h1>HTML DOM (Document Object Model) Events</h1>
+    <p id="demo"></p>
+    <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+    <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" ,src="img1.png" alt="Smiley">
+</body>
+<script>
+    function bigImg(x) {
+        x.style.height = "0px";
+        x.style.width = "0px";
+    }
+    function normalImg(y) {
+        y.style.height = "132px"
+        y.style.width = "132px"
+    }
+</script>
+
+</html>
