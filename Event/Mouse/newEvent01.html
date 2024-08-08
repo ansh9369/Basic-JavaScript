@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Using events on JS</h1>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet deleniti aliquid voluptatem asperiores earum maxime voluptate quos. Ipsum provident nobis quibusdam officia laborum excepturi error vero blanditiis temporibus nostrum numquam neque, quas obcaecati et animi fugiat non placeat possimus architecto accusamus porro voluptates nam fuga laudantium? Non laudantium voluptatum magnam.</p>
+     <button id="useMe" onclick="fun()">Show/Hide</button>
+     <p id="see"></p>
+     <button id="x1" onclick="eventHandler()">Remove</button>
+
+</body>
+<script>
+//    let x =  document.getElementById("demo")
+//    let y = document.getElementById('useMe')
+
+    let demo = document.getElementById('demo');
+    let useMe = document.getElementById('useMe');
+    // useMe.addEventListener("click", function(){
+    //     alert("You clicked on paragraph")
+    // })
+    // demo.addEventListener("mouseenter", function(){
+    //     alert("you entered in paragraph")
+    // })
+
+
+    demo.addEventListener("mousemove", GenerateRandomNum);
+    function GenerateRandomNum(){
+       document.getElementById('see').innerHTML = Math.random();
+        // consoel.log(a);
+    }
+
+    function eventHandler(){
+       demo.removeEventListener("mousemove", GenerateRandomNum);
+    }
+
+   
+   
+   
+    // function fun(){
+    //     if(demo.style.display != 'none'){
+    //         demo.style.display = 'none'
+    //     }
+    //     else{
+    //         demo.style.display = 'block';
+    //     }
+    // }
+</script>
+</html>

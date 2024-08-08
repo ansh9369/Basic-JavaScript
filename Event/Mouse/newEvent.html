@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addeventlistener</title>
+ </head>
+ <style>
+    #btn {
+        padding: 10px 14px;
+        background-color : blue;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+ </style>
+ <body>
+    <!-- browser events:
+    1.click
+    2.contextmenu
+    3.mouseover/mouseout
+    4.mousedown/mouseup
+    5.mousemove
+
+    form events
+    1. submit
+    2. focus
+    3. domContentLoaded
+
+    css events
+    1. transitioned -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero officia cumque aliquid labore eligendi excepturi aut quidem. Perferendis iure quis eveniet magni numquam culpa magnam dicta, rem sapiente, aliquam libero animi tenetur nesciunt voluptatibus minima est impedit, voluptas porro totam recusandae. Magni quod voluptas perspiciatis ad perferendis qui, quia eos.</p>
+        <!-- <button id="btn" onclick="toggleHide()" >Show/Hide</button> -->
+        <button id="btn" onclick="toggleHide()">Hide/Show</button>
+    </div>
+ </body>
+ <script>
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function(){
+        //     console.log("Mouse inside")
+        // })
+        // para.addEventListener('mouseover', function(){
+        //     console.log("Your mouse cursor will pass though...")
+        // })
+        // para.addEventListener('mouseout', function(){
+        //     console.log("Mouse went outside")
+        // })
+        // para.addEventListener('click',function(){
+        //     console.log("Hath kyu lgaya...")
+        // })
+        // para.addEventListener('mousemove', function(){
+        //     console.log("Sir pe khada hoke nachega kyaa???")
+        // })
+        
+        // let btn = document.getElementById('btn');
+        // btn.addEventListener('mousedown' , function(){
+        //     console.log("Your mouse have been downed...")
+        // })
+
+        function toggleHide(){
+            if (para.style.display != 'none') {
+                para.style.display = 'none'
+            }
+            else{
+                para.style.display = 'block'
+            }
+        }
+
+
+ </script>
+ </html>

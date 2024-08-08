@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over</title>
+</head>
+<body>
+    <h1>Using mouse over in JS</h1>
+    <p id="launch"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam qui praesentium voluptatem sint quis, sequi aliquid possimus architecto nulla a maxime ad pariatur. Nesciunt corporis possimus excepturi, quisquam vero eligendi.</p>
+
+    <button id="btn" onclick="eventHandler()">Remove</button>
+    <p id="demo"></p>
+    
+</body>
+<script>
+    // document.addEventListener("mouseover", myFunction);
+    // function myFunction(){
+    //     document.getElementById('demo').innerHTML = Math.random() * 100 + 1 
+    // }
+
+    // function removeHandler(){
+    //     document.removeEventListener("mouseover", myFunction);
+    // }
+
+    let move = document.getElementById('launch');
+
+    move.addEventListener("mousemove" , x)
+    function x(){
+        document.getElementById('demo').innerHTML = Math.random() * 100 + 1;
+    }
+     function eventHandler(){
+        move.removeEventListener("mousemove", x);
+     }
+  
+  
+</script>
+</html>

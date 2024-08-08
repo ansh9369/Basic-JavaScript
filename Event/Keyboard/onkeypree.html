@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeypress Event</title>
+</head>
+
+<body>
+    <h1>HTML DOM Event</h1>
+    <p>A function is triggered when the user is pressing a key in the input field.</p>
+    <input type="number" onkeypress="myFunction()">
+    <input type="text" onkeypress="fun()">
+    <input type="text" id="abc" onkeyup="xyz()">
+</body>
+    <script>
+        function myFunction(){
+            alert("Please hit the alert box then type next and also enter the number...")
+        }
+        function fun(){
+            alert("Please hit allow box and then type a text...")
+        }
+        function xyz(){
+          let dik = document.getElementById('abc');
+          dik.value = dik.value.toUpperCase();
+          alert("Your text automatically converted into uppercase")
+        }
+    </script>
+</html>
